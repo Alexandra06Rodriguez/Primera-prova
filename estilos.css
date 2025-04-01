@@ -1,0 +1,38 @@
+h1 {
+    color: blue; /* Cambiar de color la letra */
+}
+
+body {
+    background-color: red; /* Fondo rojo */
+  }
+  
+p {
+    font-size: 24px; /* Tamaño del texto a 24 píxeles */
+  }
+  
+p {
+    font-size: 50%; /* Tamaño del texto a 24 píxeles */
+}
+
+p {
+    font-family: Arial, sans-serif; /* Usa Arial o una fuente similar */
+  }
+
+h1 {
+    text-align: center; /* Centra el texto */
+  }
+
+div {
+    width: 200px; /* Ancho de 200 píxeles */
+    height: 100px; /* Alto de 100 píxeles */
+  }
+
+p {
+    border: 2px solid black; /* Borde negro de 2 píxeles */
+  }
+  
+div {
+    margin: 20px; /* Espacio fuera del div */
+    padding: 10px; /* Espacio dentro del div */
+  }
+  
