@@ -1,0 +1,32 @@
+table {
+    text-align: center;
+    width: 100%;
+    
+}
+
+.bachi {
+    text-align: center;
+}
+
+
+
+body {
+    background-color: mediumaquamarine;
+}
+
+/* Estilos para secciones y artículos */
+section, article, div {
+    background-color: white; /* Fondo blanco */
+    margin: 20px; /* Margen exterior */
+    padding: 15px; /* Espaciado interior */
+    border-radius: 8px; /* Bordes redondeados */
+
+}
+
+footer {
+    background-color: #0073e6; /* Fondo azul */
+    color: white; /* Texto en blanco */
+    text-align: center; /* Centrar texto */
+    padding: 15px; /* Espaciado */
+    margin-top: 20px; /* Margen superior */
+  }

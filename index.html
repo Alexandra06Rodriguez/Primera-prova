@@ -1,226 +1,115 @@
-<!DOCTYPE html> 
-<!-- Declara que el documento es de tipo HTML5. Es obligatorio en la primera línea de un documento HTML. -->
+<!DOCTYPE html>
+<!-- Declara que el documento es de tipo HTML5. Obligatorio en la primera línea de un documento HTML. -->
 
-<html lang="en"> 
-<!-- Etiqueta principal que envuelve todo el contenido de la página. El atributo "lang" indica que el idioma del contenido es inglés. -->
+<html lang="es">
+<!-- La etiqueta <html> envuelve todo el contenido de la página. El atributo "lang" indica que el idioma es español. -->
 
 <head>
-    <!-- Sección de la página donde se definen metadatos, enlaces a hojas de estilo, scripts y el título de la pestaña. -->
-    
-    <meta charset="UTF-8"> 
+    <meta charset="UTF-8">
     <!-- Define la codificación de caracteres del documento. UTF-8 permite el uso de caracteres especiales como tildes y eñes. -->
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <!-- Configura la página para que sea responsive. 
-         "width=device-width" ajusta el ancho al dispositivo y "initial-scale=1.0" establece el nivel de zoom inicial. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura la página para que sea responsive, adaptándose a distintos dispositivos. -->
 
-    <link rel="icon" href="./images.jpeg">
-
-    <link rel="stylesheet" href="./estilos.css">
-
-
-    <title>Informàtica</title> 
+    <title>Informática para alumnos</title>
     <!-- Define el título de la página que aparece en la pestaña del navegador. -->
 
-    <style>
-       .comida {
-        text-align: center;
-        color: brown;
-       } 
-    </style>
+    <link rel="stylesheet" href="estilos.css">
+    <!-- Enlaza el archivo de estilos CSS externo. -->
 
+    <link rel="icon" href="images/logo.png">
+    <!-- Agrega un ícono personalizado a la pestaña del navegador. -->
 </head>
 
-<body>    <!-- Sección del cuerpo del documento donde se colocará todo el contenido visible de la página (texto, imágenes, videos, etc.). -->
+<body>
+    <!-- Contenido visible de la página. Aquí van los textos, imágenes, enlaces, etc. -->
+
     <header>
+        <!-- Encabezado principal de la página. Normalmente contiene el título y una breve introducción. -->
         <h1>Bienvenidos a mi web</h1>
         <p>Explora nuestro contenido en clase.</p>
     </header>
-    <div class="comida">
-        <h3>Hola gente</h3>
-        <p>Os voy a enseñar que es class</p>
-    </div>
-    <h1>Prueba 1</h1> 
-    <!-- <h1> es el encabezado más importante y grande. Se usa generalmente para el título principal de la página. -->
-        <p>Ejemplo 1</p>
-        <!-- Parrafos -->
-    <h2>Prueba 2</h2> 
-    <!-- <h2> es un subtítulo de menor importancia que <h1>, pero sigue siendo relevante. Se usa para secciones principales. -->
-        <p>Ejemplo 2</p>
-        <!-- Parrafos -->
-    <h3>Prueba 3</h3> 
-    <!-- <h3> se usa para subsecciones dentro de una <h2>. Su tamaño es menor que <h2>. -->
-        <p>Ejemplo 3</p>
-        <!-- Parrafos -->
-    <h4>Prueba 4</h4> 
-    <!-- <h4> se usa para subdivisiones dentro de una sección definida por <h3>. -->
-        <p>Ejemplo 4</p>
-        <!-- Parrafos -->
-    <h5>Prueba 5</h5> 
-    <!-- <h5> es un encabezado menos importante que <h4>. Se usa para detalles específicos o pequeñas secciones. -->
-        <p>Ejemplo 5</p>
-        <!-- Parrafos -->
-    <h6>Prueba 6</h6> 
-    <!-- <h6> es el encabezado más pequeño y de menor importancia. Se usa en subtítulos menos relevantes. -->
-    <p>Ejemplo 6</p>
-    <!-- Parrafos -->
 
-    <h2>Listas Ordenadas y Desordenadas</h2> 
-    <!-- <h2> es un encabezado de nivel 2, usado para títulos importantes dentro de la página. -->
-        
-    <h3>Lista Desordenada</h3> 
-    <!-- <h3> es un encabezado de nivel 3, indicando una subsección dentro del <h2>. -->
-        
+    <nav>
+        <!-- Menú de navegación con enlaces a otras páginas o recursos. -->
+        <ul>
+            <li><a href="https://github.com/" target="_blank">Ir a Github</a></li>
+            <li><a href="https://code.visualstudio.com/" target="_blank">Ir a Visual Studio Code</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <!-- Sección de contenido principal. Se usa para dividir la página en bloques temáticos. -->
+        <h2>¿Qué aprenderemos?</h2>
+        <p>Descubre conceptos clave de HTML y CSS de manera práctica.</p>
+    </section>
+
+    <article>
+        <!-- Un artículo que contiene información independiente dentro de la página. -->
+        <h2>¿Qué es una clase en HTML y CSS?</h2>
+        <p>Las clases nos permiten aplicar estilos a múltiples elementos de la página.</p>
+    </article>
+
+    <div class="comida">
+        <!-- Un div con una clase llamada "comida" que permite aplicar estilos con CSS. -->
+        <h3>Ejemplo de div con clase</h3>
+        <p>Este es un div estilizado con la clase "comida".</p>
+    </div>
+
+    <h2>Listas en HTML</h2>
+    <!-- Encabezado para la sección de listas. -->
+
+    <h3>Lista Desordenada</h3>
     <ul>
-        <!-- <ul> (unordered list) crea una lista desordenada, es decir, sin numeración. -->
-        
-        <li>Estuche</li> 
-        <!-- <li> (list item) representa un elemento dentro de la lista. -->
-        
+        <!-- Lista desordenada (con viñetas). -->
+        <li>Estuche</li>
         <li>Mochila</li>
         <li>Bolígrafo</li>
         <li>Lápiz</li>
-        <!-- Cada <li> es un elemento dentro de la lista desordenada, representado con viñetas por defecto. -->
     </ul>
-        
-    <h3>Lista Ordenada</h3> 
-    <!-- Otro encabezado <h3> que indica la siguiente sección de la página. -->
-        
+
+    <h3>Lista Ordenada</h3>
     <ol>
-    <!-- <ol> (ordered list) crea una lista ordenada, es decir, con numeración automática. -->
-        
-        <li>Encender ordenador</li> <!-- Cada <li> dentro de <ol> representa un paso o elemento numerado en orden. -->
+        <!-- Lista ordenada (con números). -->
+        <li>Encender ordenador</li>
         <li>Poner contraseña</li>
         <li>Entrar a un navegador</li>
         <li>Buscar HTML</li>
-        <!-- Los elementos se enumeran automáticamente en orden secuencial (1, 2, 3, 4...). -->
     </ol>
-    
-    <a href="https://github.com/" target="_blank">Ir a Github</a> 
-    <!-- <a> es la etiqueta para crear enlaces en HTML. 
-        El atributo href="https://github.com/" indica la dirección web a la que llevará el enlace.
-        El texto "Ir a Github" es el que verá el usuario y podrá hacer clic en él. -->
 
-    <br> <!-- (break line) se usa para hacer un salto de línea dentro de un texto sin necesidad de una nueva etiqueta <p>. -->
+    <h2>Tablas en HTML</h2>
+    <!-- Encabezado para la sección de tablas. -->
 
-    <a href="https://code.visualstudio.com/" target="_blank">Ir a Visual Studio Code</a> 
-    <!-- <a> es la etiqueta para crear enlaces en HTML. 
-         href="https://code.visualstudio.com/" redirige a la página oficial de Visual Studio Code.
-         El texto "Ir a Visual Studio Code" es el texto visible del enlace. -->
-
-<br> <br>
-
-    <img src="./descarga.png" alt="Logo de HTML"> 
-    <!-- <img> se usa para insertar imágenes en una página web. 
-         Es una etiqueta vacía, lo que significa que no necesita una etiqueta de cierre. -->
-    <!-- Atributos principales: -->
-    <!-- src=""  → Define la URL o ruta de la imagen. Si está en la misma carpeta, solo se pone el nombre del archivo. -->
-    <!-- alt=""  → Texto alternativo que se muestra si la imagen no se carga o para accesibilidad. -->
-         <br>
-    <table border="1"> <!-- <table> define el inicio de la tabla.
-             El atributo border="1" agrega un borde a la tabla (opcional en HTML5, se recomienda CSS para estilos). -->
-        
-        <caption>Datos personales</caption> 
-        <!-- <caption> agrega un título descriptivo a la tabla. Se muestra centrado arriba de la tabla. -->
-        
-        <tr> <!-- (table row) define una fila en la tabla. -->
+    <table>
+        <!-- Tabla con información de usuarios. -->
+        <caption>Datos personales</caption>
+        <tr>
             <th>Nombre</th>
             <th>Apellido</th>
             <th>Edad</th>
-            <!-- (table header) crea encabezados en negrita para cada columna. -->
         </tr>
-        
         <tr>
             <td>Ale</td>
             <td>Rodriguez</td>
             <td>18</td>
-            <!-- (table data) representa los datos en cada celda de la fila. -->
         </tr>
-        
         <tr>
             <td>Wilmer</td>
             <td>Romero</td>
             <td>47</td>
-            <!-- Segunda fila con datos de otra persona. -->
-        </tr>
-        
-        <tr>
-            <td>Carolina</td>
-            <td>Pineda</td>
-            <td>33</td>
-            <!-- Tercera fila con datos de otra persona. -->
         </tr>
     </table>
-                
-    <table border="1"> <!-- <table> define el inicio de la tabla.
-        El atributo border="1" agrega un borde a la tabla (opcional en HTML5, se recomienda CSS para estilos). -->
-   
-   <caption>Preferencias</caption> 
-   <!-- <caption> agrega un título descriptivo a la tabla. Se muestra centrado arriba de la tabla. -->
-   
-   <tr> <!-- (table row) define una fila en la tabla. -->
-       <th>Color favorito</th>
-       <th>Comida preferida</th>
-       <th>Signo</th>
-       <!-- (table header) crea encabezados en negrita para cada columna. -->
-   </tr>
-   
-   <tr>
-       <td>Azul</td>
-       <td>Pizza</td>
-       <td>Sagitario</td>
-       <!-- (table data) representa los datos en cada celda de la fila. -->
-   </tr>
-   
-   <tr>
-       <td>Verde</td>
-       <td>Hamburguesa</td>
-       <td>Acuario</td>
-       <!-- Segunda fila con datos de otra persona. -->
-   </tr>
-   
-   <tr>
-       <td>Rojo</td>
-       <td>Sushi</td>
-       <td>Capricornio</td>
-       <!-- Tercera fila con datos de otra persona. -->
-   </tr>
 
-   <tr>
-    <td>Naranja</td>
-    <td>Pasta</td>
-    <td>Libra</td>
-    <!-- Cuarta fila con datos de otra persona. -->
-</tr>
-</table>          
-<section>
-    <h2>Organización de contenido en secciones</h2>
-    <p>Sirve para dividir la página en partes lógicas, como secciones de un artículo o de una web.</p>
-</section>
-<article>
-    <h2>Contenido independiente</h2>
-    <p>Se usa para crear contenido que puede existir por sí solo, como un post de blog o una noticia.</p>
-</article>
+    <nav>
+        <a href="./ejemplo.html">Ir a página secundaria </a>
+    </nav>
 
-<nav>
-    <ul>
-        <li><a href="./2 pagina.html"></a>2n enlace</li>
-        <li><a href="./ejemplo.html"></a>3r enlace</li>
-        <li><a href="./prueba.html"></a>4t enlace</li>
-    </ul>
-</nav>
+    <footer>
+        <!-- Pie de página con información de derechos de autor. -->
+        <p>&copy; 2025 Mi Web - Todos los derechos reservados.</p>
+    </footer>
 
-<div> <!-- Se usa para agrupar elementos y aplicar estilos con CSS. -->
-    <h2>Bienvenido</h2> 
-    <p>Este es un ejemplo de un div en HTML.</p>
-</div>
-
-<footer>
-    <p>&copy; 2025 Mi Web - Todos los derechos reservados.</p> 
-</footer>
-
-  
 </body>
 
 </html>
-<!-- Cierra el documento HTML. -->
+<!-- Cierre del documento HTML. -->
