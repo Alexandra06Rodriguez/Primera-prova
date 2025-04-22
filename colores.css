@@ -1,54 +1,115 @@
+/* ---------- Estilos generales para la tabla ---------- */
 table {
-    text-align: center;
-    width: 100%;
-    
+    text-align: center;      /* Centra el contenido de las celdas horizontalmente */
+    width: 100%;             /* Hace que la tabla ocupe todo el ancho disponible */
 }
 
+/* ---------- Contenedor del horario ---------- */
 .bachi {
-    text-align: center;
+    text-align: center;      /* Centra el contenido dentro del contenedor .bachi */
 }
 
-
-
+/* ---------- Estilo del fondo de la página ---------- */
 body {
-    background-color: mediumaquamarine;
+    background-color: mediumaquamarine;  /* Aplica un fondo color aqua a toda la página */
 }
 
-/* Estilos para secciones y artículos */
+/* ---------- Estilos para secciones, artículos y divs ---------- */
 section, article, div {
-    background-color: white; /* Fondo blanco */
-    margin: 20px; /* Margen exterior */
-    padding: 15px; /* Espaciado interior */
-    border-radius: 8px; /* Bordes redondeados */
-
+    background-color: white;   /* Fondo blanco para mayor contraste */
+    margin: 20px;              /* Margen externo de 20px alrededor */
+    padding: 15px;             /* Espaciado interno de 15px */
+    border-radius: 8px;        /* Bordes redondeados de 8px */
 }
 
-/* Estilos para filas */
+/* ---------- Tabla con clases específicas ---------- */
+.horario {
+    border-collapse: collapse; /* Junta los bordes de las celdas (sin doble línea) */
+    width: 100%;               /* Ocupa todo el ancho disponible */
+    text-align: center;        /* Centra el texto de las celdas */
+    font-family: sans-serif;   /* Usa una fuente sin serifas (más moderna) */
+}
+
+.horario th,
+.horario td {
+    border: 1px solid #ccc;    /* Aplica bordes grises a cada celda */
+    padding: 10px;             /* Espaciado interno de 10px */
+}
+
+/* ---------- Colores por materia (asignatura) ---------- */
+.economia     { background-color: #c39bd3; }      /* Lila */
+.castellano   { background-color: #f8c6d8; }      /* Rosa claro */
+.literatura   { background-color: #aed6f1; }      /* Celeste claro */
+.catalan      { background-color: #f1948a; }      /* Rojo suave */
+.ingles       { background-color: #85c1e9; }      /* Azul claro */
+.tutoria      { background-color: #82e0aa; }      /* Verde menta */
+.robotica     { background-color: #f7dc6f; }      /* Amarillo suave */
+.fisica       { background-color: #a04000; color: white; } /* Marrón oscuro con texto blanco */
+.programacion { background-color: #f5b041; }      /* Naranja claro */
+.filosofia    { background-color: #85929e; color: white; } /* Gris con texto blanco */
+.creacion     { background-color: #fbe9e7; }      /* Beige rosado */
+.latin        { background-color: #f9e79f; }      /* Amarillo pastel */
+.patio        { background-color: #76d7c4; font-weight: bold; } /* Turquesa con texto en negrita */
+
+/* ---------- Título del horario ---------- */
+.bachi h2 {
+    text-align: center;       /* Centra el título */
+    margin-bottom: 20px;      /* Espacio inferior de 20px */
+}
+
+/* ---------- Estilo para filas flexibles ---------- */
 .row {
-    width: 95%; /* Ancho del 100% */
-    display: flex; /*cambia la direccion, hace que se vea horizontalmente */
+    width: 95%;       /* Ocupa el 95% del ancho del contenedor */
+    display: flex;  /* Usa flexbox para alinear los elementos hijos horizontalmente */
 }
 
-/* Estilos para columnas de tamaño 1/4 , divide el ancho en 4 partes */
+/* ---------- Columnas que ocupan 1/4 del ancho (25%) ---------- */
 .col4 {
-    width: 25%; /* Ancho del 25% */
+    width: 25%;      /* Ancho del 25% del contenedor */
 }
 
-/* Estilos para columnas de tamaño 1/2 , divide el ancho en 2 partes*/
+/* ---------- Columnas que ocupan 1/2 del ancho (50%) ---------- */
 .col2 {
-    width: 50%; /* Ancho del 50% */
-    text-align: center;
+    width: 50%;      /* Ancho del 50% */
+    text-align: center;   /* Centra el contenido horizontalmente */
 }
 
-/* Estilos para columnas de tamaño 1/3, divide el ancho en 3 partes */
+/* ---------- Columnas que ocupan 1/3 del ancho (33%) ---------- */
 .col3 {
-    width: 33%; /* Ancho del 33% */
+    width: 33%;   /* Ancho del 33.3% (1/3 del contenedor) */
 }
 
+/* ---------- Estilo para el pie de página ---------- */
 footer {
-    background-color: #0073e6; /* Fondo azul */
-    color: white; /* Texto en blanco */
-    text-align: center; /* Centrar texto */
-    padding: 15px; /* Espaciado */
-    margin-top: 20px; /* Margen superior */
-  }
+    background-color: #0073e6; /* Azul fuerte */
+    color: white;              /* Texto blanco para contraste */
+    text-align: center;        /* Centra el texto horizontalmente */
+    padding: 15px;             /* Espaciado interno */
+    margin-top: 20px;          /* Separación superior respecto al contenido anterior */
+}
+
+
+@media (max-width: 768px) {
+    /* Esta media query se activa cuando el ancho de la pantalla es de 768 píxeles o menos
+       (tamaño típico de una tablet o móvil en modo vertical) */
+
+    nav ul {
+        flex-direction: column; /* Cambia la dirección del menú de horizontal a vertical */
+        align-items: center;    /* Centra los elementos del menú en el eje horizontal */
+    }
+
+    .col2, .col3, .col4 {
+        flex: 1 1 100%; /* Hace que cada columna ocupe el 100% del ancho disponible,
+                           apilándolas una debajo de la otra */
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block; /* Cambia el formato de la tabla para que cada celda se muestre en bloque,
+                           lo cual es más legible en pantallas pequeñas */
+    }
+
+    td, th {
+        text-align: left; /* Alinea el texto de las celdas a la izquierda para mejor lectura en móviles */
+    }
+}
+
