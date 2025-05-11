@@ -1,3 +1,10 @@
+header {
+     background-color: blue; /* color de fondo */
+     color: white; /* color de la letra */
+     text-align: center; /* lugar del texto, centado ne medio */
+     padding: 15px;
+}
+
 /* ---------- Estilos generales para la tabla ---------- */
 table {
     text-align: center;      /* Centra el contenido de las celdas horizontalmente */
